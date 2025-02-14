@@ -16,6 +16,7 @@
             <th>Prodi</th>
             <th>Angkatan</th>
             <th>Alamat</th>
+            <th>TEST</th>
         </tr>
 
         @foreach ($students as $student)
@@ -26,6 +27,7 @@
             <td>{{ $student->prodi }}</td>
             <td>{{ $student->angkatan }}</td>
             <td>{{ $student->alamat }}</td>
+            <td>{{ $student->test }}</td>
             <td>
                 <form action="{{ route('student.destroy', $student->id)}}" method="POST">
                     @csrf
